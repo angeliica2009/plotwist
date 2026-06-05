@@ -1,0 +1,132 @@
+v class="container">
+
+  <header>
+
+    <!-- LOGO + TÍTULO -->
+    <div class="logo-title">
+
+      <img 
+        src="https://i.postimg.cc/fydF4C3S/unnamed.jpg" 
+        alt="Plotwist Logo" 
+        class="logo"
+      >
+
+      <h1>Plotwist</h1>
+
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" data-section="inicio">Inicio</a>
+      <a href="#" data-section="pelis">Películas</a>
+      <a href="#" data-section="reviews">Reviews</a>
+      <a href="#" data-section="favoritos">Favoritos</a>
+    </nav>
+
+    <!-- BUSCADOR -->
+    <input 
+      id="search" 
+      type="text" 
+      placeholder="Buscar película..."
+      autocomplete="off"
+    >
+
+  </header>
+
+  <main>
+
+    <!-- 🎬 PELÍCULA DESTACADA -->
+    <section class="featured">
+
+      <h2>🎬 Película del día</h2>
+
+      <div id="featuredMovie"></div>
+
+    </section>
+
+    <!-- 🎞️ SECCIÓN PELÍCULAS -->
+    <section class="pelis-section">
+
+      <!-- INFO PELÍCULA -->
+      <section class="movie hidden" id="movieSection">
+
+        <div class="poster-container">
+
+          <img id="poster" alt="Poster película">
+
+          <p class="tmdb-credit">
+            Fuente: TMDB (The Movie Database)
+          </p>
+
+        </div>
+
+        <div>
+
+          <h2 id="title"></h2>
+
+          <p id="rating"></p>
+
+          <p id="resumen"></p>
+
+          <button id="favBtn">
+            ⭐ Añadir a favoritos
+          </button>
+
+        </div>
+
+      </section>
+
+      <!-- FILTROS -->
+      <section class="filters">
+
+        <h3>¿Qué te apetece ver?</h3>
+
+        <div class="tags">
+
+          <button data-genre="28">Acción</button>
+          <button data-genre="35">Comedia</button>
+          <button data-genre="10749">Amor</button>
+          <button data-genre="27">Terror</button>
+
+        </div>
+
+      </section>
+
+      <!-- CARDS -->
+      <div class="cards" id="cards"></div>
+
+    </section>
+
+    <!-- ⭐ FAVORITOS -->
+    <section class="favorites-section">
+
+      <h2>⭐ Mis favoritos</h2>
+
+      <div id="favorites"></div>
+
+    </section>
+
+    <!-- 💬 REVIEWS -->
+    <section class="reviews-section">
+
+      <h2>💬 Reviews</h2>
+
+      <div id="reviews"></div>
+
+      <textarea 
+        id="reviewInput" 
+        placeholder="Escribe tu review..."
+      ></textarea>
+
+      <button id="sendReview">
+        Enviar
+      </button>
+
+    </section>
+
+  </main>
+
+</div>
+<audio controls autoplay>
+  <source src="https://s3.aconvert.com/convert/p3r68-cdx67/f6g4b-jt1w0.mp3" type="audio/mpeg">
+</audio>
