@@ -1,0 +1,235 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER LOGO + TÍTULO */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 0;
+  color: #ff2e75;
+  font-size: 2.2rem;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ff2e75;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* INPUT */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 80%;
+  border-radius: 25px;
+  border: 2px solid #ff99bb;
+}
+
+/* PELÍCULA */
+.movie {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.movie img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BOTONES */
+.tags button {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #ff99bb;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tags button:hover {
+  background: #ff2e75;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ff2e75;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #e6005c;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card {
+  min-width: 130px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FEATURED */
+.featured {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.featured img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.featured h2 {
+  color: #ff2e75;
+}
+
+/* REVIEWS */
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #ff99bb;
+  padding: 10px;
+}
+
+/* FAVORITOS */
+.favorites-section {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#favorites {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 10px;
+}
+
+.fav-card {
+  min-width: 130px;
+  background: #fff0f6;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fav-card:hover {
+  transform: scale(1.05);
+}
+
+.fav-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CREDITOS TMDB */
+.tmdb-credit{
+  font-size: 11px;
+  color: #777;
+  margin-top: 6px;
+  text-align: center;
+  opacity: 0.85;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.poster-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .tmdb-credit,
+.fav-card .tmdb-credit{
+  font-size: 10px;
+}
+
+.card:hover .tmdb-credit,
+.fav-card:hover .tmdb-credit{
+  color: #ff2e75;
+  transition: 0.3s;
+}
